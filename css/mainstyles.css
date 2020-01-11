@@ -95,9 +95,11 @@ footer {
     width: 33%;
     justify-content: flex-start;
 }
-
-.validationLink {
-    padding: 5px;
+.btn1 {
+    margin-left: 400%;
+}
+.btn2 {
+    margin-left: 600%;
 }
 
 .externalcontainer {
