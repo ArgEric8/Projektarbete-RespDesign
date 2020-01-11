@@ -14,7 +14,6 @@ nav {
     color: white;
 }
 
-<<<<<<< HEAD
 section {
     display: flex;
     flex-direction: column;
@@ -46,8 +45,6 @@ section {
     width: 100%;
     font-weight: 100;
 }
-=======
->>>>>>> 7d2c198e737ef2cab6ddb2499a2435f504fb022a
 
 footer {
     width: 100%;
