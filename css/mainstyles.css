@@ -24,7 +24,10 @@ section {
 .slideContainer {
     display: flex;
     justify-content: center;
-    overflow: hidden;
+}
+
+.slide {
+    display: none;
 }
 
 .productContainer {
