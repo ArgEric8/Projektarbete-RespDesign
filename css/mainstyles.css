@@ -24,6 +24,7 @@ section {
 .slideContainer {
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .productContainer {
@@ -54,12 +55,7 @@ footer {
     min-height: 1vh;
     padding: 10px;
     display: flex;
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-    
-    
->>>>>>> b467c6dcda8157ba721af2d57fd65b2c879cfaa0
 }
 
 .validationContainer {
