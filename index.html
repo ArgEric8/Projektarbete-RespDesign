@@ -46,24 +46,26 @@
 
     <section>
         <div class="slideContainer">
-            <img class="slide" src="https://loremflickr.com/500/500">
-            <img class="slide" src="https://loremflickr.com/500/500">
-            <img class="slide" src="https://loremflickr.com/500/500">
-            <img class="slide" src="https://loremflickr.com/500/500">
+            <img class="slide" src="https://via.placeholder.com/150">
+            <img class="slide" src="https://via.placeholder.com/150">
+            <img class="slide" src="https://via.placeholder.com/150">
+            <img class="slide" src="https://via.placeholder.com/150">
             <button class="buttonLeft" onclick="currentSlide(-1)">&#10094;</button>
             <button class="buttonRight" onclick="currentSlide(1)">&#10095;</button>
         </div>
 
+        <div class="productText"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic, soluta odit at iure inventore facere eos odio veritatis eligendi saepe sunt deserunt vitae repudiandae est eum fugit praesentium et! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, alias aspernatur quidem culpa consequuntur sunt sed laborum accusamus id molestiae animi nisi nobis quas. Velit, pariatur? Molestiae earum ducimus itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea enim molestias rem cum ullam quod rerum reiciendis animi tenetur consequatur voluptate saepe, minus inventore totam nesciunt sed nulla quibusdam.</p></div>
+
         <ul class="productContainer">
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
         </ul>
     </section>
 </body>
@@ -92,13 +94,16 @@
     }
 
     function displaySlide(n) {
+        var i;
         var x = document.getElementsByClassName("slide");
         // Loop around
-        if (n > x.length) {sliderNumber = 1}
-        if (n < 1) {sliderNumber = 3}
+        if (n > x.length) {slideNumber = 1;}
+        if (n < 1) {slideNumber = x.length;}
 
-        for (var i = 0; i < x.length; i++)
-            x[i].style.display="none";
+        for (i = 0; i < x.length; i++)
+        {
+            x[i].style.display = "none";
+        }
     }
     x[slideNumber-1].style.display = "flex";
 </script>
