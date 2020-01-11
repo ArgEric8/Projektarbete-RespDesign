@@ -26,9 +26,16 @@ footer {
     display: flex;
     flex-flow: row wrap;
     align-items: center; 
+    height: 60px;
 }
 
 .validationLink {
     list-style: none;
     padding: 5px;
+}
+
+.externalcontainer {
+
+background-color: aqua;
+
 }
