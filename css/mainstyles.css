@@ -76,7 +76,7 @@ footer {
 width: 25%;
 background-color: aqua;
 justify-content: center;
-align-items: flex-start;
+align-items: center;
 display: flex;
 
 }
