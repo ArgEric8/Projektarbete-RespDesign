@@ -147,7 +147,15 @@ footer {
     
 }
 .btn3 {
-   align-content: space-around;
+    align-content: space-around;
+    background-color: rgba(242, 242, 243, 0);
+    border-color: rgba(255, 255, 255, 0);
+}
+.btn4 {
+     align-content: center;
+     background-color: rgba(242, 242, 243, 0);
+     border-color: rgba(255, 255, 255, 0);
+
 }
 .externalcontainer {
 width: 33%;
