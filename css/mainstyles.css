@@ -13,8 +13,8 @@ background-color: gray;
 padding-bottom: 30px;
 }
 
-.fa-shopping-cart{
-    font-size:36px;
+.header-item1{
+    padding-top: 10px;
 }
 
 
@@ -23,8 +23,9 @@ padding-bottom: 30px;
     justify-content: space-around;
     align-items: center;
     background-color: gray;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
 }
 
 
