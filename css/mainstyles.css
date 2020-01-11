@@ -22,7 +22,7 @@ footer {
 
 .validationContainer {
     width: 20%;
-    background-color: white;
+    background-color: rgb(173, 168, 195);
     display: flex;
     flex-flow: row wrap;
 }
