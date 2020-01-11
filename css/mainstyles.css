@@ -47,10 +47,23 @@ section {
 .slideContainer {
     display: flex;
     justify-content: center;
+    margin: 20px 0;
 }
 
 .slide {
     display: none;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.productText {
+    font-size: 1.5rem;
+    border: 1px solid brown;
+    padding: 10px;
 }
 
 .productContainer {
@@ -58,19 +71,32 @@ section {
     flex-flow: row wrap;
     justify-content: center;
     border: 1px solid pink;
+    margin: 20px 0;
 }
 
 .productItem {
     display: flex;
     width: 150px;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     margin: 10px;
+    border: 1px solid goldenrod;
 }
 
 .productItem h1 {
     text-align: center;
     width: 100%;
     font-weight: 100;
+}
+
+.infoButton {
+    align-self: flex-end;
+    margin: 10px;
+    padding: 5px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    outline: none;
 }
 
 footer {
