@@ -105,6 +105,40 @@ section {
     outline: none;
 }
 
+.omOss {
+    display: flex;
+    border: 1px solid bisque;
+    margin: 10px 0;
+}
+.bildKarta {
+    width: 400px;
+    align-self: center;
+    margin-right: 20px;
+}
+.mainOss {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-content: flex-end;
+}
+.bildOss {
+    width: 250px;
+    align-self: flex-end;
+}
+.mainOss p {
+
+}
+.homeButton {
+    margin: 10px;
+    padding: 5px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    align-self: flex-end;
+}
+
 footer {
     width: 100%;
     background-color: grey;
