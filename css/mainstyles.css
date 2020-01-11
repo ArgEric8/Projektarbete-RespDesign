@@ -54,6 +54,8 @@ footer {
     min-height: 1vh;
     padding: 10px;
     display: flex;
+    justify-content: center;
+    
 }
 
 .validationContainer {
@@ -61,8 +63,9 @@ footer {
     background-color: rgb(173, 168, 195);
     display: flex;
     align-items: center;
-    justify-content: left;
     height: 60px;
+    align-self: flex-start;
+
     
 }
 
@@ -76,6 +79,10 @@ background-color: aqua;
 width: 20%;
 justify-content: center;
 align-items: center;
+align-self: center;
 
+}
+.externallink {
+padding: 5px;
 
 }
