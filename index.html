@@ -8,6 +8,7 @@
     <title>Hem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/mainstyles.css">
+    <script src="javascript/mainjs.js"></script>
 </head>
 
 <body>
@@ -86,27 +87,4 @@
         <li class="">pp</li>
     </ul>
 </footer>
-
-<script>
-    var slideNumber = 1;
-    displaySlide(slideNumber);
-
-    function currentSlide(n) {
-        displaySlide (slideNumber += n)
-    }
-
-    function displaySlide(n) {
-        var i;
-        var x = document.getElementsByClassName("slide");
-        // Loop around
-        if (n > x.length) {slideNumber = 1;}
-        if (n < 1) {slideNumber = x.length;}
-
-        for (i = 0; i < x.length; i++)
-        {
-            x[i].style.display = "none";
-        }
-    }
-    x[slideNumber-1].style.display = "flex";
-</script>
 </html>
