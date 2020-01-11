@@ -27,6 +27,7 @@ footer {
     flex-flow: row wrap;
     align-items: center; 
     height: 60px;
+    
 }
 
 .validationLink {
@@ -37,5 +38,7 @@ footer {
 .externalcontainer {
 
 background-color: aqua;
+width: 20%;
+
 
 }
