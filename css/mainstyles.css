@@ -118,19 +118,20 @@ section {
 .mainOss {
     display: flex;
     justify-content: space-between;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     align-content: flex-end;
 }
 .bildOss {
     width: 250px;
     align-self: flex-end;
 }
-.mainOss p {
-
+.omOssText {
+    align-self: flex-start;
 }
 .homeButton {
+    font-size: 1.3rem;
     margin: 10px;
-    padding: 5px;
+    padding: 20px;
     background-color: greenyellow;
     cursor: pointer;
     border: none;
