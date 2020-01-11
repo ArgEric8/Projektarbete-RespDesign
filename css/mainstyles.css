@@ -83,6 +83,10 @@ section {
     border: 1px solid goldenrod;
 }
 
+.productItem img {
+    width: 100%;
+}
+
 .productItem h1 {
     text-align: center;
     width: 100%;
@@ -151,4 +155,27 @@ padding: 5px;
     display: flex;
     align-items: center;
     justify-content: right;
+}
+
+
+/*mobile devices*/
+@media (max-width: 767.98px) {
+    * {
+        
+    }
+
+    .productItem {
+        width: 75px;
+    }
+    .productItem h1 {
+        font-size: 1rem;
+    }
+    .productText {
+        font-size: 1rem;
+    }
+    .infoButton {
+        font-size: 0.75rem;
+        padding: 3px;
+        align-self: center;
+    }
 }
