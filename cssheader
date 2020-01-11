@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: gray;
+padding-bottom: 30px;
+}
+
+.fa-shopping-cart{
+    font-size:36px;
+}
+
+
+.nav_links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
