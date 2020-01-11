@@ -72,8 +72,8 @@
     function displaySlide(n) {
         var x = document.getElementsByClassName("slide");
         // Loop around
-        if (n > x.length) {n = 1}
-        if (n < 1) {n = 3}
+        if (n > x.length) {sliderNumber = 1}
+        if (n < 1) {sliderNumber = 3}
 
         for (var i = 0; i < x.length; i++)
             x[i].style.display="none";
