@@ -1,13 +1,49 @@
 * {
     box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: rgb(85, 77, 77);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
     color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.slideContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.productContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border: 1px solid pink;
+}
+
+.productItem {
+    display: flex;
+    width: 150px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.productItem h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
 }
 
 footer {
@@ -27,6 +63,5 @@ footer {
 }
 
 .validationLink {
-    list-style: none;
     padding: 5px;
 }
