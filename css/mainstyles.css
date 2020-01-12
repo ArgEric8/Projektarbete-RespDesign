@@ -121,11 +121,13 @@ section {
 
 .popUp {
     background-color: green;
-    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    display: none;
 }
 
-.popUp:active {
-    visibility: visible;
+.popUp:target {
+    display: block;
 }
 
 .omOss {
@@ -175,25 +177,16 @@ footer {
     justify-content: space-between;
 }
 
-.footerContainerFirst {
-    background-color: rgb(173, 168, 195);
+.footerContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 33.33%;
 }
-.btn1, .btn2, .btn4 {
-    background-color: rgba(242, 242, 243, 0);
-    border-color: rgba(255, 255, 255, 0);
-    outline: none;
-    cursor: pointer;
+.footerContainer--first {
+    background-color: rgb(173, 168, 195);
 }
-.btn3 {
-    background-color: rgba(242, 242, 243, 0);
-    border-color: rgba(255, 255, 255, 0);
-    outline: none;
-    cursor: pointer;
-}
+<<<<<<< HEAD
 .btn5 {
 justify-content: center;
 margin-right: 200px;
@@ -211,16 +204,28 @@ margin: 0 10px;
 
 .externallink {
 padding: 5px;
+=======
+
+.footerContainer--second {
+    background-color: aqua;
+    margin: 0 10px;
 }
 
-.footerContainerThird {
+.footerContainer--third {
     background-color: pink;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 33.33%;
+>>>>>>> 16efc2d4db6a0b25567f87e5a2d308d13ba15e56
 }
 
+.btn {
+    background-color: rgba(242, 242, 243, 0);
+    border-color: rgba(255, 255, 255, 0);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn--twitter {
+    margin-left: 10px;
+}
 
 /*mobile devices*/
 @media (max-width: 767.98px) {
