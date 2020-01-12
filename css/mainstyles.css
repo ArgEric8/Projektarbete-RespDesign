@@ -117,11 +117,13 @@ section {
 
 .popUp {
     background-color: green;
-    visibility: hidden;
+    width: 50px;
+    height: 50px;
+    display: none;
 }
 
-.popUp:active {
-    visibility: visible;
+.popUp:target {
+    display: block;
 }
 
 .omOss {
