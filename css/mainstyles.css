@@ -106,19 +106,23 @@ section {
     width: 100%;
     font-weight: 100;
     padding: 5px;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: pre;
 }
 
 .infoButton {
     align-self: flex-end;
     margin: 10px;
     padding: 5px;
-    background-color: greenyellow;
-    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(72, 212, 96), rgb(71, 156, 84));
     border: none;
     text-decoration: none;
     outline: none;
+    color: snow;
 }
 
+/* popup-ruta
 .popUp {
     background-color: rgb(255, 255, 255);
     width: 25%;
@@ -128,7 +132,6 @@ section {
     border-radius: 20px;
     padding: 20px;
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -138,7 +141,7 @@ section {
 
 .infoButton:focus + .popUp {
     visibility: visible;
-}
+}*/
 
 .omOss {
     display: flex;
