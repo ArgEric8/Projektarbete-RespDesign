@@ -17,6 +17,10 @@ padding-bottom: 30px;
     padding-top: 10px;
 }
 
+.header-item2 a{
+    font-size: 24px;
+    padding: 20px 40px;
+}
 
 .nav_links{
     display: flex;
