@@ -8,7 +8,7 @@
     <title>Hem</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/mainstyles.css">
-    <script src="javascript/mainjs.js"></script>
+    <script async src="javascript/mainjavascript.js"></script>
 </head>
 
 <body>
@@ -45,12 +45,15 @@
 
     <section>
         <div class="slideContainer">
-            <img class="slide" src="https://via.placeholder.com/150">
-            <img class="slide" src="https://via.placeholder.com/150">
-            <img class="slide" src="https://via.placeholder.com/150">
-            <img class="slide" src="https://via.placeholder.com/150">
-            <button class="buttonLeft" onclick="currentSlide(-1)">&#10094;</button>
-            <button class="buttonRight" onclick="currentSlide(1)">&#10095;</button>
+            <img class="slide" src="https://via.placeholder.com/500">
+            <img class="slide" src="https://via.placeholder.com/250">
+            <img class="slide" src="https://via.placeholder.com/250">
+            <img class="slide" src="https://via.placeholder.com/250">
+            <div class="slideButtonTitle">
+                <i class="fa fa-chevron-left fa-2x" onclick="changeSlide(-1)"></i>
+                <h1>Product</h1>
+                <i class="fa fa-chevron-right fa-2x" onclick="changeSlide(1)"></i>
+            </div>
         </div>
 
         <div class="productText"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab hic, soluta odit at iure inventore facere eos odio veritatis eligendi saepe sunt deserunt vitae repudiandae est eum fugit praesentium et! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, alias aspernatur quidem culpa consequuntur sunt sed laborum accusamus id molestiae animi nisi nobis quas. Velit, pariatur? Molestiae earum ducimus itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ea enim molestias rem cum ullam quod rerum reiciendis animi tenetur consequatur voluptate saepe, minus inventore totam nesciunt sed nulla quibusdam.</p></div>
@@ -64,25 +67,31 @@
             <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
             <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
             <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
-            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton">Mer info</button></li>
+            <li class="productItem"><img src="https://via.placeholder.com/150" alt="?"><h1>Pop</h1><button class="infoButton" onclick="showMoreInfo(1)">Mer info</button></li>
+
+            <p class="popUp">TESTo</p>
         </ul>
     </section>
 </body>
 
 <footer>
-    <ul class="validationContainer">
-        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn1"><i class="fa fa-html5 fa-4x"></i></button></a>
-        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn2"><i class="fa fa-css3 fa-4x"></i></button></a>
+    <div class="footerContainerFirst">
+            
+        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn1"><i class="fa fa-html5 fa-4x"></i>HTML</button></a>
+        
+        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn2"><i class="fa fa-css3 fa-4x"></i>CSS</button></a>
+             
 
         
-    </ul>
-    <ul class="externalcontainer">
-        <li class="externallink"><a href="">Socialamedier</a></li>
-        <li class="externallink"><a href="https://www.lantmannen.se/">Flyktifråndalarna</a></li>
+    </div>
+    <div class="footerContainerSecond">
+
+        <a href="https://www.lantmannen.se/"><button class="btn3"><i class="fa fa-facebook-square fa-4x"></i></button></a>
+        <a href="https://www.lantmannen.se/"><button class="btn4"><i class="fa fa-twitter-square fa-4x"></i></button></a>
         
-    </ul>
-    <ul class="conny">
-        <li class="">Informationssida</li>
-    </ul>
+    </div>
+    <div class="footerContainerThird">
+            <a href="omOss.html"><button class="btn5"><i class="fa fa-info-circle fa-4x"></i>Om oss</button></a>
+    </div>
 </footer>
 </html>

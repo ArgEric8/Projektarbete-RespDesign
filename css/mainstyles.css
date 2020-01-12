@@ -36,6 +36,8 @@ padding-bottom: 30px;
 body {
     background-color: rgb(85, 77, 77);
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1920px;
+    margin: auto;
 }
 
 nav {
@@ -51,18 +53,26 @@ section {
 
 .slideContainer {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    align-content: center;
+    margin: 10px auto;
+    width: 75%;
+    flex-flow: column wrap;
 }
 
 .slide {
     display: none;
     background-color: blueviolet;
-    width: 100%;
+    max-width: 50%;
 }
 
 .slide img {
     width: 100%;
+}
+.slideButtonTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .productText {
@@ -109,6 +119,50 @@ section {
     outline: none;
 }
 
+.popUp {
+    background-color: green;
+    visibility: hidden;
+}
+
+.popUp:active {
+    visibility: visible;
+}
+
+.omOss {
+    display: flex;
+    border: 1px solid bisque;
+    margin: 10px 0;
+    height: 400px;
+}
+.bildKarta {
+    align-self: center;
+    margin-right: 20px;
+}
+.mainOss {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+.bildOss {
+    width: auto;
+    height: 50%;
+    align-self: flex-end;
+}
+.omOssText {
+    height: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.homeButton {
+    font-size: 1.3rem;
+    padding: 20px;
+    background-color: greenyellow;
+    cursor: pointer;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
 footer {
     width: 100%;
     background-color: grey;
@@ -117,48 +171,55 @@ footer {
     min-height: 1vh;
     padding: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    
-    
 }
 
-.validationContainer {
+.footerContainerFirst {
     background-color: rgb(173, 168, 195);
     display: flex;
     align-items: center;
-    height: 60px;
-    width: 33%;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 33.33%;
 }
-.btn1 {
-    margin-left: 400%;
+.btn1, .btn2, .btn4 {
+    background-color: rgba(242, 242, 243, 0);
+    border-color: rgba(255, 255, 255, 0);
+    outline: none;
+    cursor: pointer;
 }
-.btn2 {
-    margin-left: 600%;
+.btn3 {
+    background-color: rgba(242, 242, 243, 0);
+    border-color: rgba(255, 255, 255, 0);
+    outline: none;
+    cursor: pointer;
 }
+.btn5 {
+justify-content: center;
+margin-right: 200px;
+background-color: rgba(242, 242, 243, 0);
+border-color: rgba(255, 255, 255, 0);
 
-.externalcontainer {
-width: 33%;
-height: 60px;
+}
+.footerContainerSecond {
 background-color: aqua;
 justify-content: center;
 align-items: center;
 display: flex;
-
+width: 33.33%;
+margin: 0 10px;
 }
 .externallink {
 padding: 5px;
 
 }
 
-.conny {
+.footerContainerThird {
     background-color: pink;
-    width: 33%;
-    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
+    width: 33.33%;
 }
 
 
