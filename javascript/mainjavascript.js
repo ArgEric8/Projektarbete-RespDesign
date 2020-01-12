@@ -19,7 +19,7 @@
         x[slideNumber-1].style.display = "flex";
     }
 
-    function showMoreInfo(currentInfoButton) {
+    /*function showMoreInfo(currentInfoButton) {
         var currentInfoButton;
         var popUp = getElementsByClassName("popUp");
         if (popUp[currentInfoButton].style.display = "none") {
@@ -28,4 +28,4 @@
         else {
             popUp[currentInfoButton].style.display = "none";
         }
-    }
+    }*/

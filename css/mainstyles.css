@@ -117,7 +117,11 @@ section {
 
 .popUp {
     background-color: green;
-    display: none;
+    visibility: hidden;
+}
+
+.popUp:active {
+    visibility: visible;
 }
 
 .omOss {
@@ -186,7 +190,6 @@ footer {
     outline: none;
     cursor: pointer;
 }
-.btn4 {}
 .footerContainerSecond {
 background-color: aqua;
 justify-content: center;
