@@ -190,6 +190,11 @@ footer {
     outline: none;
     cursor: pointer;
 }
+.btn5 {
+justify-content: center;
+margin-right: 200px;
+
+}
 .footerContainerSecond {
 background-color: aqua;
 justify-content: center;
