@@ -186,25 +186,6 @@ footer {
 .footerContainer--first {
     background-color: rgb(173, 168, 195);
 }
-<<<<<<< HEAD
-.btn5 {
-justify-content: center;
-margin-right: 200px;
-background-color: rgba(242, 242, 243, 0);
-border-color: rgba(255, 255, 255, 0);
-}
-.footerContainerSecond {
-background-color: aqua;
-justify-content: center;
-align-items: center;
-display: flex;
-width: 33.33%;
-margin: 0 10px;
-}
-
-.externallink {
-padding: 5px;
-=======
 
 .footerContainer--second {
     background-color: aqua;
@@ -213,7 +194,6 @@ padding: 5px;
 
 .footerContainer--third {
     background-color: pink;
->>>>>>> 16efc2d4db6a0b25567f87e5a2d308d13ba15e56
 }
 
 .btn {
