@@ -7,7 +7,7 @@
 
     function displaySlide(n) {
         var i;
-        var x = document.getElementsByClassName("slide");
+        var x = document.getElementsByClassName("slideImage");
         // Loop around
         if (n > x.length) {slideNumber = 1}
         if (n < 1) {slideNumber = x.length}
