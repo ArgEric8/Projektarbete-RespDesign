@@ -48,6 +48,12 @@ color: #1752a0
     margin-top: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
+    
+}
+
+.nav_links a{
+    text-decoration: none;
+
 }
 
 
