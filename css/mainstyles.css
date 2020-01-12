@@ -81,14 +81,11 @@ section {
 }
 
 .slide {
-<<<<<<< HEAD
-=======
     background-color: rgba(0, 0, 0, 0.438);
     width: 50%;
     margin: 10px auto;
 }
 .slideImage {
->>>>>>> 9278e7bcc54440b1897ab38ee434e4afaff99a9c
     display: none;
     background-color: blueviolet;
     max-width: 50%;
@@ -160,10 +157,7 @@ section {
     color: snow;
 }
 
-<<<<<<< HEAD
 /* popup-ruta
-=======
->>>>>>> 9278e7bcc54440b1897ab38ee434e4afaff99a9c
 .popUp {
     background-color: rgb(255, 255, 255);
     width: 25%;
