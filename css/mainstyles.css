@@ -3,6 +3,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 img {width: 100%;}
 header{
@@ -52,12 +53,6 @@ font-size: 125%;
     
 }
 
-.nav_links a{
-    text-decoration: none;
-
-}
-
-
 body {
     background-color: rgb(85, 77, 77);
     font-family: Arial, Helvetica, sans-serif;
@@ -84,8 +79,9 @@ section {
     flex-flow: column wrap;
 }
 .slide {
-    background-color: black;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 50%;
+    margin: 10px auto;
 }
 .slideImage {
     display: none;
@@ -96,8 +92,12 @@ section {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    color: rgb(233, 233, 233);
+    font-size: 75%;
 }
-
+.slideButtonTitle h1 {
+    padding: 0 20px;
+}
 .productText {
     font-size: 1.5rem;
     border: 1px solid brown;
@@ -142,7 +142,6 @@ section {
     padding: 5px;
     background-image: linear-gradient(to right, rgb(72, 212, 96), rgb(71, 156, 84));
     border: none;
-    text-decoration: none;
     outline: none;
     color: snow;
 }
@@ -217,7 +216,6 @@ section {
     padding: 20px;
     background-color: greenyellow;
     cursor: pointer;
-    text-decoration: none;
     align-self: flex-end;
 }
 
