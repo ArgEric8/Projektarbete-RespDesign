@@ -32,6 +32,8 @@ padding-bottom: 30px;
 body {
     background-color: rgb(85, 77, 77);
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 1920px;
+    margin: auto;
 }
 
 nav {
@@ -47,18 +49,26 @@ section {
 
 .slideContainer {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    align-content: center;
+    margin: 10px auto;
+    width: 75%;
+    flex-flow: column wrap;
 }
 
 .slide {
     display: none;
     background-color: blueviolet;
-    width: 100%;
+    max-width: 50%;
 }
 
 .slide img {
     width: 100%;
+}
+.slideButtonTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .productText {
@@ -105,13 +115,18 @@ section {
     outline: none;
 }
 
+.popUp {
+    background-color: green;
+    display: none;
+}
+
 .omOss {
     display: flex;
     border: 1px solid bisque;
     margin: 10px 0;
+    height: 400px;
 }
 .bildKarta {
-    width: 400px;
     align-self: center;
     margin-right: 20px;
 }
@@ -119,24 +134,24 @@ section {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    align-content: flex-end;
+    overflow: hidden;
 }
 .bildOss {
-    width: 250px;
+    width: auto;
+    height: 50%;
     align-self: flex-end;
 }
 .omOssText {
-    align-self: flex-start;
+    height: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .homeButton {
     font-size: 1.3rem;
-    margin: 10px;
     padding: 20px;
     background-color: greenyellow;
     cursor: pointer;
-    border: none;
     text-decoration: none;
-    outline: none;
     align-self: flex-end;
 }
 
@@ -148,71 +163,49 @@ footer {
     min-height: 1vh;
     padding: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    
-    
 }
 
-.validationContainer {
+.footerContainerFirst {
     background-color: rgb(173, 168, 195);
     display: flex;
     align-items: center;
-    height: 60px;
-    width: 33%;
     justify-content: center;
-    
-
-    
+    width: 33.33%;
 }
-.btn1 {
-    margin-left: 1px;
-    align-content: center;
+.btn1, .btn2, .btn4 {
     background-color: rgba(242, 242, 243, 0);
     border-color: rgba(255, 255, 255, 0);
-
-    
-    
-}
-.btn2 {
-    margin-left: 100px;
-    align-content: center;
-    background-color: rgba(242, 242, 243, 0);
-    border-color: rgba(255, 255, 255, 0);
-    
+    outline: none;
+    cursor: pointer;
 }
 .btn3 {
-    align-content: space-around;
     background-color: rgba(242, 242, 243, 0);
     border-color: rgba(255, 255, 255, 0);
+    outline: none;
+    cursor: pointer;
 }
-.btn4 {
-     align-content: center;
-     background-color: rgba(242, 242, 243, 0);
-     border-color: rgba(255, 255, 255, 0);
-
-}
-.externalcontainer {
-width: 33%;
-height: 60px;
+.btn4 {}
+.footerContainerSecond {
 background-color: aqua;
 justify-content: center;
 align-items: center;
 display: flex;
-
+width: 33.33%;
+margin: 0 10px;
 }
 .externallink {
 padding: 5px;
 
 }
 
-.conny {
+.footerContainerThird {
     background-color: pink;
-    width: 33%;
-    height: 60px;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
+    width: 33.33%;
 }
 
 
