@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-
+img {width: 100%;}
 header{
 display: flex;
 justify-content: space-around;
@@ -58,16 +58,14 @@ section {
     width: 75%;
     flex-flow: column wrap;
 }
-
 .slide {
+    background-color: black;
+    width: 50vw;
+}
+.slideImage {
     display: none;
-    background-color: blueviolet;
-    max-width: 50%;
 }
 
-.slide img {
-    width: 100%;
-}
 .slideButtonTitle {
     display: flex;
     justify-content: center;
@@ -97,10 +95,6 @@ section {
     border: 1px solid goldenrod;
 }
 
-.productItem img {
-    width: 100%;
-}
-
 .productItem h1 {
     text-align: center;
     width: 100%;
@@ -122,26 +116,45 @@ section {
     color: snow;
 }
 
-/* popup-ruta
+
 .popUp {
     background-color: rgb(255, 255, 255);
-    width: 25%;
-    height: 25%;
     visibility: hidden;
     position: absolute;
-    border-radius: 20px;
+    width: 300px;
+    left: 50%;
+    border-radius: 10px;
     padding: 20px;
     display: flex;
+    flex-flow: column;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
     z-index: 1;
 }
+.popUp_item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.popUp_item img {
+    width: 25%;
+}
+.popUp_item p {
+    padding: 5px;
+    font-size: 0.75rem;
+}
+.popUp_itemShadow {
+    background-color: rgba(0, 0, 0, 0.075);
+}
 
-.infoButton:focus + .popUp {
+.btn--shoppingcart:focus + .popUp {
     visibility: visible;
-}*/
+}
 
 .omOss {
     display: flex;
