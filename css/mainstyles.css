@@ -4,65 +4,54 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: rgb(215, 242, 255);
 }
 img {width: 100%;}
+
 header{
-display: flex;
-justify-content: space-around;
-align-items: center;
-background-color: gray;
-padding-bottom: 30px;
-}
-
-.header-item1{
-    padding-top: 10px;
-}
-
-.header-item2 a{
-    font-size: 24px;
-    padding: 20px 40px;
-}
-
-
-
-.nav_links li a:hover,
-.nav_links.menu-btn:hover {
-  background-color: #045190;
-}
-.nav_links a:link {
-color: black;
-}
-.nav_links a:hover { 
-font-size: 125%;
-color: #1752a0
-}
-.nav_links a:visited {
-    color: black;
-}
-
-
-.nav_links{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background-color: gray;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    
+    padding: 15px;
 }
-
-
+.header-item1 {
+    padding-top: 10px;
+}
+.header-item2 {
+    font-size: 24px;
+}
+.navBar--desktop {
+    display: flex;
+    background-color: rgba(92, 0, 0, 0.459);
+    padding: 20px 0;
+    margin: 10px auto;
+    justify-content: center;
+    width: 50%;
+}
+.navBar--mobile {
+    display: none;
+}
+.link {
+    padding: 20px;
+    width: 100%;
+}
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.26);
+}
+.nav_links {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 body {
     background-image: linear-gradient(to bottom right, rgb(112, 55, 2), rgb(94, 69, 69));
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1920px;
     margin: auto;
-}
-
-nav {
-    color: white;
 }
 
 section {
@@ -118,7 +107,7 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    width: 250px;
+    width: 30%;
     max-width: 400px;
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.11);
@@ -126,7 +115,7 @@ section {
 .productItem img {
     height: 65%;
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
 }
 .productText {
     font-size: 1rem;
@@ -156,12 +145,15 @@ section {
 
 /* Popup card (shopping cart) */
 .popUp {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(46, 46, 46);
     visibility: hidden;
     position: absolute;
-    width: 300px;
-    left: 50%;
+    z-index: 1;
+}
+.popUp--shoppingcart {
     border-radius: 10px;
+    margin-right: 120px;
+    min-width: 150px;
     padding: 20px;
     display: flex;
     flex-flow: column;
@@ -170,7 +162,6 @@ section {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
-    z-index: 1;
 }
 .popUp_item {
     width: 100%;
@@ -180,11 +171,11 @@ section {
     align-items: center;
 }
 .popUp_item img {
-    width: 25%;
+    width: 35%;
 }
 .popUp_item p {
     padding: 5px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 .popUp_itemShadow {
     background-color: rgba(0, 0, 0, 0.075);
@@ -263,7 +254,6 @@ footer {
     border-color: rgba(255, 255, 255, 0);
     outline: none;
     cursor: pointer;
-    color: rgb(200, 238, 255);
 }
 
 .btn--twitter, .btn--css {
@@ -273,18 +263,40 @@ footer {
 
 
 /*mobile devices*/
-@media (max-width: 767.98px) {
+@media (max-width: 900.00px) {
     * {
-        
+       font-size: 0.9rem;
     }
-
+    .navBar--desktop {
+        display: none;
+    }
+    .hamburgerMenu:focus + .popUp {
+        display: flex;
+    }
+    .navBar--mobile {
+        display: flex;
+        background-color: goldenrod;
+        margin: 10px auto;
+        justify-content: center;
+        width: 50%;
+    }
+    .nav_links {
+        flex-flow: column wrap;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .nav_links li {
+        width: 100%;
+    }
+    .link {
+        display: flex;
+        width: 100%;
+    }
+    .link:hover {
+        background-color: rgba(0, 0, 0, 0.26);
+    }
     .productItem {
-    }
-    .productItem h1 {
-        font-size: 1rem;
-    }
-    .productText {
-        font-size: 1rem;
+        width: 25%;
     }
     .infoButton {
         font-size: 0.75rem;
