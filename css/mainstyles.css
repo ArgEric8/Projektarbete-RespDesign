@@ -22,6 +22,22 @@ padding-bottom: 30px;
     padding: 20px 40px;
 }
 
+
+
+.nav_links li a:hover,
+.nav_links.menu-btn:hover {
+  background-color: #045190;
+}
+.nav_links a:link {
+color: black;
+}
+.nav_links a:hover {
+color: #1752a0
+}
+.nav_links a:visited {
+    color: black;
+}
+
 .nav_links{
     display: flex;
     justify-content: space-around;
