@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
 }
-
+img {width: 100%;}
 header{
 display: flex;
 justify-content: space-around;
@@ -49,6 +49,12 @@ font-size: 125%;
     margin-top: 10px;
     padding-bottom: 10px;
     padding-top: 5px;
+    
+}
+
+.nav_links a{
+    text-decoration: none;
+
 }
 
 
@@ -77,16 +83,14 @@ section {
     width: 75%;
     flex-flow: column wrap;
 }
-
 .slide {
-    display: none;
-    background-color: blueviolet;
-    max-width: 50%;
-}
-
-.slide img {
+    background-color: black;
     width: 100%;
 }
+.slideImage {
+    display: none;
+}
+
 .slideButtonTitle {
     display: flex;
     justify-content: center;
@@ -111,13 +115,15 @@ section {
 .productItem {
     display: flex;
     width: 150px;
+    height: 230px;
     flex-flow: column wrap;
     margin: 10px;
     border: 1px solid goldenrod;
 }
-
 .productItem img {
     width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
 .productItem h1 {
@@ -141,26 +147,44 @@ section {
     color: snow;
 }
 
-/* popup-ruta
 .popUp {
     background-color: rgb(255, 255, 255);
-    width: 25%;
-    height: 25%;
     visibility: hidden;
     position: absolute;
-    border-radius: 20px;
+    width: 300px;
+    left: 50%;
+    border-radius: 10px;
     padding: 20px;
     display: flex;
+    flex-flow: column;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
     z-index: 1;
 }
+.popUp_item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.popUp_item img {
+    width: 25%;
+}
+.popUp_item p {
+    padding: 5px;
+    font-size: 0.75rem;
+}
+.popUp_itemShadow {
+    background-color: rgba(0, 0, 0, 0.075);
+}
 
-.infoButton:focus + .popUp {
+.btn--shoppingcart:focus + .popUp {
     visibility: visible;
-}*/
+}
 
 .omOss {
     display: flex;
