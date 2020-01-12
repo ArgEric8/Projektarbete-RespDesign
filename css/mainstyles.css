@@ -31,12 +31,14 @@ padding-bottom: 30px;
 .nav_links a:link {
 color: black;
 }
-.nav_links a:hover {
+.nav_links a:hover { 
+font-size: 125%;
 color: #1752a0
 }
 .nav_links a:visited {
     color: black;
 }
+
 
 .nav_links{
     display: flex;
