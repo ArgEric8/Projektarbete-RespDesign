@@ -171,51 +171,35 @@ footer {
     justify-content: space-between;
 }
 
-.footerContainerFirst {
-    background-color: rgb(173, 168, 195);
+.footerContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 33.33%;
 }
-.btn1, .btn2, .btn4 {
-    background-color: rgba(242, 242, 243, 0);
-    border-color: rgba(255, 255, 255, 0);
-    outline: none;
-    cursor: pointer;
-}
-.btn3 {
-    background-color: rgba(242, 242, 243, 0);
-    border-color: rgba(255, 255, 255, 0);
-    outline: none;
-    cursor: pointer;
-}
-.btn5 {
-justify-content: center;
-margin-right: 200px;
-
-}
-.footerContainerSecond {
-background-color: aqua;
-justify-content: center;
-align-items: center;
-display: flex;
-width: 33.33%;
-margin: 0 10px;
-}
-.externallink {
-padding: 5px;
-
+.footerContainer--first {
+    background-color: rgb(173, 168, 195);
 }
 
-.footerContainerThird {
+.footerContainer--second {
+    background-color: aqua;
+    margin: 0 10px;
+}
+
+.footerContainer--third {
     background-color: pink;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 33.33%;
 }
 
+.btn {
+    background-color: rgba(242, 242, 243, 0);
+    border-color: rgba(255, 255, 255, 0);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn--twitter {
+    margin-left: 10px;
+}
 
 /*mobile devices*/
 @media (max-width: 767.98px) {
