@@ -3,6 +3,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 header{
@@ -51,11 +52,14 @@ color: #1752a0
     
 }
 
+<<<<<<< HEAD
 .nav_links a{
     text-decoration: none;
 }
 
 
+=======
+>>>>>>> 9278e7bcc54440b1897ab38ee434e4afaff99a9c
 body {
     background-color: rgb(85, 77, 77);
     font-family: Arial, Helvetica, sans-serif;
@@ -83,6 +87,14 @@ section {
 }
 
 .slide {
+<<<<<<< HEAD
+=======
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 50%;
+    margin: 10px auto;
+}
+.slideImage {
+>>>>>>> 9278e7bcc54440b1897ab38ee434e4afaff99a9c
     display: none;
     background-color: blueviolet;
     max-width: 50%;
@@ -96,8 +108,12 @@ section {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    color: rgb(233, 233, 233);
+    font-size: 75%;
 }
-
+.slideButtonTitle h1 {
+    padding: 0 20px;
+}
 .productText {
     font-size: 1.5rem;
     border: 1px solid brown;
@@ -115,9 +131,15 @@ section {
 .productItem {
     display: flex;
     width: 150px;
+    height: 230px;
     flex-flow: column wrap;
     margin: 10px;
     border: 1px solid goldenrod;
+}
+.productItem img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
 .productItem img {
@@ -140,12 +162,14 @@ section {
     padding: 5px;
     background-image: linear-gradient(to right, rgb(72, 212, 96), rgb(71, 156, 84));
     border: none;
-    text-decoration: none;
     outline: none;
     color: snow;
 }
 
+<<<<<<< HEAD
 /* popup-ruta
+=======
+>>>>>>> 9278e7bcc54440b1897ab38ee434e4afaff99a9c
 .popUp {
     background-color: rgb(255, 255, 255);
     width: 25%;
@@ -197,7 +221,6 @@ section {
     padding: 20px;
     background-color: greenyellow;
     cursor: pointer;
-    text-decoration: none;
     align-self: flex-end;
 }
 
