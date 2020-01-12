@@ -199,7 +199,6 @@ justify-content: center;
 margin-right: 200px;
 background-color: rgba(242, 242, 243, 0);
 border-color: rgba(255, 255, 255, 0);
-
 }
 .footerContainerSecond {
 background-color: aqua;
@@ -209,9 +208,9 @@ display: flex;
 width: 33.33%;
 margin: 0 10px;
 }
+
 .externallink {
 padding: 5px;
-
 }
 
 .footerContainerThird {
