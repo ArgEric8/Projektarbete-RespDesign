@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
 }
-img {width: 100%;}
+
 header{
 display: flex;
 justify-content: space-around;
@@ -25,17 +25,16 @@ padding-bottom: 30px;
 
 
 
-
 .nav_links li a:hover,
 .nav_links.menu-btn:hover {
   background-color: #045190;
 }
-
 .nav_links a:link {
 color: black;
 }
 .nav_links a:hover { 
 font-size: 125%;
+color: #1752a0
 }
 .nav_links a:visited {
     color: black;
@@ -52,6 +51,8 @@ font-size: 125%;
     padding-top: 5px;
     
 }
+
+
 
 body {
     background-color: rgb(85, 77, 77);
@@ -78,6 +79,7 @@ section {
     width: 75%;
     flex-flow: column wrap;
 }
+
 .slide {
     background-color: rgba(0, 0, 0, 0.438);
     width: 50%;
@@ -85,8 +87,13 @@ section {
 }
 .slideImage {
     display: none;
+    background-color: blueviolet;
+    max-width: 50%;
 }
 
+.slide img {
+    width: 100%;
+}
 .slideButtonTitle {
     display: flex;
     justify-content: center;
@@ -126,6 +133,10 @@ section {
     object-fit: contain;
 }
 
+.productItem img {
+    width: 100%;
+}
+
 .productItem h1 {
     text-align: center;
     width: 100%;
@@ -146,44 +157,26 @@ section {
     color: snow;
 }
 
+/* popup-ruta
 .popUp {
     background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: 25%;
     visibility: hidden;
     position: absolute;
-    width: 300px;
-    left: 50%;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     display: flex;
-    flex-flow: column;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-wrap;
     z-index: 1;
 }
-.popUp_item {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-.popUp_item img {
-    width: 25%;
-}
-.popUp_item p {
-    padding: 5px;
-    font-size: 0.75rem;
-}
-.popUp_itemShadow {
-    background-color: rgba(0, 0, 0, 0.075);
-}
 
-.btn--shoppingcart:focus + .popUp {
+.infoButton:focus + .popUp {
     visibility: visible;
-}
+}*/
 
 .omOss {
     display: flex;
@@ -281,4 +274,5 @@ footer {
         padding: 3px;
         align-self: center;
     }
+
 }
