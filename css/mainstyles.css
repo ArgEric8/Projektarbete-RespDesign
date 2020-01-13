@@ -43,9 +43,7 @@ header {
     width: 50%;
     background-color: var(--main-color);
 }
-.navBar--mobile {
-    display: none;
-}
+#popUp--navBar {display: none;}
 .link {
     padding: 20px;
     width: 100%;
@@ -270,9 +268,7 @@ footer {
 .footerContainer i {padding: 10px;}
 .footerContainer button {font-size: 1.5rem;}
 
-.btn--hamburgerMenu {
-    display: none;
-}
+.btn--hamburgerMenu, #btn--open {display: none;}
 
 /*mobile devices*/
 
@@ -280,37 +276,31 @@ footer {
     * {
        font-size: 0.9rem;
     }
+
     .navBar--desktop {display: none;}
+    #btn--open {display: flex;}
     .btn--hamburgerMenu {z-index: 2; padding: 5px; font-size: 3rem;}
-    .btn--hamburgerMenu, .popUp--navBar {display: block; top: 0; position: fixed;}
-    .btn--hamburgerMenu:focus + .popUp--navBar {
-        transition: 0.5s;
+    .btn--hamburgerMenu, #popUp--navBar {top: 0; position: fixed;}
+    #popUp--navBar--open {
         background-color: var(--shadow-color);
         padding-top: 60px;
         width: 150px;
-        visibility: visible;
     }
     .nav_links {
         flex-flow: column wrap;
         align-items: flex-start;
         width: 100%;
     }
+    .nav_links li {width: 100%;}
     .link {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
-        width: 100%;
     }
-    .link:first-child {
-        font-weight: bold;
-    }
+    .link:first-child {font-weight: bold;}
 
-    .slideButtonTitle {
-        font-size: 50%;
-    }
-    .section {
-        width: 100%;
-    }
+    .slideButtonTitle {font-size: 50%;}
+    .section {width: 100%;}
     .slide {height: 200px; width: 200px;}
     
     /* footer mobile */
@@ -322,14 +312,6 @@ footer {
     }
 }
 
-
-
-/*big screens*/
-
-@media (min-width: 1920px) {
-    .productItem {
-    }
-}
 
 /* detta ska fixas
 
