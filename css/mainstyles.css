@@ -83,7 +83,6 @@ section {
     align-items: center;
     padding: 20px;
     color: rgb(233, 233, 233);
-    font-size: 75%;
     background-color: rgba(0, 0, 0, 0.438);
 }
 .slideButtonTitle h1 {
@@ -118,7 +117,6 @@ section {
     object-fit: cover;
 }
 .productText {
-    font-size: 1rem;
     height: 10%;
     overflow: hidden;
     white-space: pre-wrap;
@@ -128,7 +126,6 @@ section {
     text-align: center;
     width: 100%;
     padding: 5px;
-    font-size: 1rem;
     overflow: hidden;
     white-space: pre;
     text-overflow: ellipsis;
@@ -145,12 +142,12 @@ section {
 
 /* Popup card (shopping cart) */
 .popUp {
-    background-color: rgb(46, 46, 46);
     visibility: hidden;
     position: absolute;
     z-index: 1;
 }
 .popUp--shoppingcart {
+    background-color: rgb(46, 46, 46);
     border-radius: 10px;
     margin-right: 120px;
     min-width: 150px;
@@ -261,37 +258,40 @@ footer {
     margin-left: 40px;
 }
 
-
+.btn--hamburgerMenu {
+    display: none;
+}
 
 /*mobile devices*/
+
 @media (max-width: 900.00px) {
     * {
        font-size: 0.9rem;
     }
-    .navBar--desktop {
-        display: none;
+    .navBar--desktop {display: none;}
+    .btn--hamburgerMenu {z-index: 2; padding: 5px;}
+    .btn--hamburgerMenu, .popUp--navBar {display: flex; top: 0; position: fixed;}
+    .btn--hamburgerMenu:focus + .popUp--navBar {
+        visibility: visible;
+        width: 150px;
     }
-    .hamburgerMenu:focus + .popUp {
-        display: flex;
-    }
-    .navBar--mobile {
-        display: flex;
-        background-color: goldenrod;
-        margin: 10px auto;
-        justify-content: center;
-        width: 50%;
+    .popUp--navBar {
+        background-color: rgb(46, 46, 46);
+        padding-top: 50px;
     }
     .nav_links {
         flex-flow: column wrap;
         align-items: flex-start;
         width: 100%;
     }
-    .nav_links li {
-        width: 100%;
-    }
     .link {
         display: flex;
+        flex-direction: row;
+        align-items: flex-end;
         width: 100%;
+    }
+    .link:first-child {
+        font-weight: bold;
     }
     .link:hover {
         background-color: rgba(0, 0, 0, 0.26);
@@ -308,11 +308,17 @@ footer {
     .slideButtonTitle {
         font-size: 50%;
     }
+    
+    /* footer mobile */
+    .footerContainer .btn {
+        font-size: 0.8rem;
+    }
 }
 
 
 
 /*big screens*/
+
 @media (min-width: 1920px) {
     .productItem {
     }
