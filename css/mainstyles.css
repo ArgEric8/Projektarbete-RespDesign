@@ -185,12 +185,11 @@ section {
 }
 .btn--shoppingcart:focus + .popUp {visibility: visible;}
 .btn--green {
-    width: 70%;
-    margin: 20px auto 0;
-    padding: 10px;
+    padding: 5px 20px;
     background-color: var(--green-color);
     text-align: center;
 }
+.btn_checkout {margin: 10px auto 0;}
 .btn_buy:focus + .popUp--confirm {
     visibility: visible;
     transition: 0.5s;
@@ -208,7 +207,7 @@ section {
     position: fixed;
 }
 .popUp--confirm {visibility: hidden;}
-.btn_buy {align-self: flex-end;}
+
 /* Container Section (om oss, produkt1-9) */
 .containerSection {
     display: flex;
@@ -221,28 +220,25 @@ section {
     width: auto;
     height: 200px;
 }
-.omOss {
+.containerSection_mini {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-flow: row wrap;
     overflow: hidden;
+    padding: 0 10px;
 }
+.containerSection_text {align-self: flex-start;}
 .containerSection_secondPicture {
     align-self: flex-end;
     object-fit: contain;
     overflow: hidden;
-}
-.containerSection_text {
-    max-height: 200px;
-    overflow: hidden;
-    margin
 }
 .homeButton {
     font-size: 1.3rem;
     padding: 10px;
     background-color: var(--green-color);
     cursor: pointer;
-    align-self: flex-end;
 }
 
 /* footer */
