@@ -268,13 +268,16 @@ footer {
        font-size: 0.9rem;
     }
     .navBar--desktop {display: none;}
-    .btn--hamburgerMenu, .popUp--navBar {display: flex; top: 0; position: fixed; margin: 15px;}
+    .btn--hamburgerMenu {z-index: 2; padding: 5px;}
+    .btn--hamburgerMenu, .popUp--navBar {display: flex; top: 0; position: fixed;}
     .btn--hamburgerMenu:focus + .popUp--navBar {
         visibility: visible;
-        background-color: rgb(46, 46, 46);
         width: 150px;
     }
-    .popUp--navBar {top: 70px;}
+    .popUp--navBar {
+        background-color: rgb(46, 46, 46);
+        padding-top: 50px;
+    }
     .nav_links {
         flex-flow: column wrap;
         align-items: flex-start;
