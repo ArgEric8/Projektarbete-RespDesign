@@ -21,7 +21,7 @@ img {width: 100%;}
     font-size: 1.5em;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -65,7 +65,10 @@ body {
     background-image: linear-gradient(to bottom right, rgb(255, 123, 0), rgb(136, 60, 60));
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1920px;
-    margin: auto;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
@@ -73,29 +76,30 @@ section {
     flex-direction: column;
     width: 100%;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    flex: 1 0 auto;
 }
 
 .slideContainer {
     display: flex;
-    align-content: center;
-    margin: 10px auto;
-    width: 90%;
-    flex-flow: column wrap;
+    flex-flow: column;
+    justify-content: flex-end;
+    margin: 20px auto;
+    background-color: var(--shadow-color);
 }
-
-.slide {
-    width: 50%;
-    margin: 0 auto;
-}
+.slide {height: 400px; width: 400px;}
 .slideImage {
     display: none;
+    height: 100%;
+    overflow: hidden;
+    object-fit: contain;
 }
 
 .slideButtonTitle {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80px;
     padding: 20px;
     color: rgb(233, 233, 233);
     background-color: var(--shadow-color);
@@ -241,15 +245,15 @@ section {
     cursor: pointer;
 }
 
-/* footer */
+/* footer, https://jsfiddle.net/balatamizh/av4bnacp/ */
 footer {
     width: 100%;
-    position: relative;
-    bottom: 0;
+    flex-shrink: 0;
+    align-self: flex-end;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 166px;
+    margin-top: 20px;
 }
 
 .footerContainer {
@@ -307,6 +311,7 @@ footer {
     .section {
         width: 100%;
     }
+    .slide {height: 200px; width: 200px;}
     
     /* footer mobile */
     .footerContainer i {
@@ -328,10 +333,10 @@ footer {
 
 /* detta ska fixas
 
+    kolla kontrast (footer)
     HTML och CSS validering samt länk i footern
     Kundvagn sidan
-    produktsidan
+    produktsidor - klar?????
     alt på alla bilder
-    sticky footer på botten
 
 */

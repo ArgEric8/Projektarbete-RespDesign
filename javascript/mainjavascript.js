@@ -1,3 +1,5 @@
+    
+    /* https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_slideshow_self */
     var slideNumber = 1;
     displaySlide(slideNumber);
 
@@ -18,14 +20,3 @@
         }
         x[slideNumber-1].style.display = "flex";
     }
-
-    /*function showMoreInfo(currentInfoButton) {
-        var currentInfoButton;
-        var popUp = getElementsByClassName("popUp");
-        if (popUp[currentInfoButton].style.display = "none") {
-            popup[currentInfoButton].style.display = "flex";
-        }
-        else {
-            popUp[currentInfoButton].style.display = "none";
-        }
-    }*/
