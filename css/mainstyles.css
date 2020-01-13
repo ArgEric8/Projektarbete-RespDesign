@@ -212,17 +212,17 @@ section {
     visibility: hidden;
 }
 .btn_buy {align-self: flex-end;}
-/* Om Oss */
+/* Container Section (om oss, produkt1-9) */
 .containerSection {
     display: flex;
-    border: 1px solid bisque;
     flex-flow: row;
-
     align-content: flex-start;
+    background-color: var(--shadow-color);
+    padding: 20px;
 }
 .containerSection_mainPicture, .containerSection_secondPicture {
-    max-width: 400px;
-    height: 50%;
+    width: auto;
+    height: 200px;
 }
 .omOss {
     display: flex;
@@ -232,10 +232,17 @@ section {
 }
 .containerSection_secondPicture {
     align-self: flex-end;
+    object-fit: contain;
+    overflow: hidden;
+}
+.containerSection_text {
+    max-height: 200px;
+    overflow: hidden;
+    margin
 }
 .homeButton {
     font-size: 1.3rem;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--green-color);
     cursor: pointer;
     align-self: flex-end;
