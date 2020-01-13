@@ -178,13 +178,12 @@ section {
     padding: 5px;
     font-size: 0.8rem;
 }
-.popUp_itemShadow {
-    background-color: rgba(0, 0, 0, 0.075);
+.popUp_itemShadow {background-color: rgba(0, 0, 0, 0.075);}
+.popUp_item--title {
+    border-bottom: solid 2px;
+    font-weight: bolder;
 }
-
-.btn--shoppingcart:focus + .popUp {
-    visibility: visible;
-}
+.btn--shoppingcart:focus + .popUp {visibility: visible;}
 .btn--green {
     width: 70%;
     margin: 20px auto 0;
@@ -208,9 +207,7 @@ section {
     background: var(--shadow-color);
     position: fixed;
 }
-.popUp--confirm {
-    visibility: hidden;
-}
+.popUp--confirm {visibility: hidden;}
 .btn_buy {align-self: flex-end;}
 /* Container Section (om oss, produkt1-9) */
 .containerSection {
@@ -339,5 +336,6 @@ footer {
     Kundvagn sidan
     produktsidan
     alt på alla bilder
-    
+    sticky footer på botten
+
 */
