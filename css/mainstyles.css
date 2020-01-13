@@ -70,7 +70,8 @@ body {
 section {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -78,7 +79,6 @@ section {
     display: flex;
     align-content: center;
     margin: 10px auto;
-    width: 75%;
     flex-flow: column wrap;
 }
 
@@ -112,7 +112,6 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 0 auto;
 }
 .productItem {
     display: flex;
@@ -287,6 +286,9 @@ footer {
 
     .slideButtonTitle {
         font-size: 50%;
+    }
+    .section {
+        width: 100%;
     }
     
     /* footer mobile */
