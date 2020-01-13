@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
+
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Vagn</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/mainstyles.css">
-        
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/mainstyles.css">
+    <script async src="javascript/mainjavascript.js"></script>
 </head>
+
 <body>
-        <header>
+    <header>
              
 
-                <div class="header-item1">
-                        <img src="./css/bilder/header-logga.png" alt="logo">
-        
-                </div>
-        
-                <div class="header-item2">
-                    <a href="#">Webbshop</a>
-        
-                </div>
-        
-                <div class="header-item3">
-                 <a href="https://www.lantmannen.se/"><button class="btn btn--shoppingcart"><i class="fa fa-shopping-cart fa-4x"></i>Kundvagn</button></a>
-        
-                </div>
-            </header>
+        <div class="header-item1">
+                <img src="bilder/header-logga.png" alt="logo">
+
+        </div>
+
+        <div class="header-item2">
+            <h2 class="header-rubrik"> Webbshop </h2>
             
-        
-             <sub-header>
-                <nav>
-                    <ul class="nav_links">
-                        <li><a href="https://www.lantmannen.se/">Startsida</a></li>
-                        <li><a href="https://www.lantmannen.se/">Tröjor</a></li>
-                        <li><a href="https://www.lantmannen.se/">T-shirts</a></li>
-                        <li><a href="https://www.lantmannen.se/">Jeans</a></li>
-                    </ul>
-                </nav>
-            </sub-header>
+        </div>
+
+        <div class="header-item3">
+            <button class="btn btn--shoppingcart"><i class="fa fa-shopping-cart fa-4x"></i>Kundvagn</button>
+            <ul class="popUp popUp--shoppingcart">
+                <li class="popUp_item popUp_itemShadow">
+                    <p>0 kr</p>
+                    <img src="/bilder/vattenflaska.jpg">
+                </li>
+                <li class="popUp_item">
+                    <p>99 kr</p>
+                    <img src="/bilder/heligtvatten.jpg">
+                </li>
+                <li class="popUp_item popUp_itemShadow">
+                    <p>1 000 kr</p>
+                    <img src="/bilder/Greenskohorn.jpg">
+                </li>
+                <li class="popUp_item">
+                    <p>500 kr</p>
+                    <img src="/bilder/termos.jpg">
+                </li>
+                
+                    <button class="btn btn--checkout">Checkout</button>
+                
+            </ul>
+        </div>
+    </header>
+
+    <nav class="navBar navBar--desktop">
+        <ul class="nav_links">
+            <li><a class="link" href="index.html">Startsida</a></li>
+            <li><a class="link" href="vagn.html">Tröjor</a></li>
+            <li><a class="link" href="vagn.html">T-Shirts</a></li>
+            <li><a class="link" href="vagn.html">Jeans</a></li>
+        </ul>
+    </nav>
+    
+    <button class="btn btn--hamburgerMenu"><i class="fa fa-bars fa-4x" aria-hidden="true"></i></button>
+    <nav class="popUp popUp--navBar">
+        <ul class="nav_links">
+            <a class="link" href="index.html"><li>Startsida</li></a>
+            <a class="link" href="vagn.html"><li>Tröjor</li></a>
+            <a class="link" href="vagn.html"><li>T-Shirts</li></a>
+            <a class="link" href="vagn.html"><li>Jeans</li></a>
+        </ul>
+    </nav>
 
             <section>
                   <ul>
@@ -52,19 +81,19 @@
              </section>
     
             </body>
-            <footer>
-                    <div class="footerContainer footerContainer--first"> 
-                        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn btn--html"><i class="fa fa-html5 fa-4x"></i>HTML</button></a>
-                        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn btn--css"><i class="fa fa-css3 fa-4x"></i>CSS</button></a>
-                    </div>
-                
-                    <div class="footerContainer footerContainer--second">
-                        <a href="https://www.lantmannen.se/"><button class="btn btn--facebook"><i class="fa fa-facebook-square fa-4x"></i></button></a>
-                        <a href="https://www.lantmannen.se/"><button class="btn btn--twitter"><i class="fa fa-twitter-square fa-4x"></i></button></a>
-                    </div>
-                
-                    <div class="footerContainer footerContainer--third">
-                            <a href="omOss.html"><button class="btn btn--omOss"><i class="fa fa-info-circle fa-4x"></i>Om oss</button></a>
-                    </div>
-             </footer>
+<footer>
+    <div class="footerContainer footerContainer--first"> 
+        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn btn--html"><i class="fa fa-html5"></i>HTML</button></a>
+        <a href="https://www.youtube.com/?hl=sv&gl=SE"><button class="btn btn--css"><i class="fa fa-css3"></i>CSS</button></a>
+    </div>
+
+    <div class="footerContainer footerContainer--second">
+        <a href="https://www.lantmannen.se/"><button class="btn btn--facebook"><i class="fa fa-facebook-square"></i>Facebook</button></a>
+        <a href="https://www.lantmannen.se/"><button class="btn btn--twitter"><i class="fa fa-twitter-square"></i>Twitter</button></a>
+    </div>
+
+    <div class="footerContainer footerContainer--third">
+            <a href="omOss.html"><button class="btn btn--omOss"><i class="fa fa-info-circle fa"></i>Om Oss</button></a>
+    </div>
+</footer>
 </html>
