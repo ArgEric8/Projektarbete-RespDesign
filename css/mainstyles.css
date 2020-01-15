@@ -32,9 +32,7 @@ header {
 .header-item1 {
     padding-top: 10px;
 }
-.header-item2 {
-    font-size: 24px;
-}
+
 .navBar--desktop {
     display: flex;
     padding: 20px 0;
@@ -58,11 +56,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+html {min-width: 550px;}
 body {
     background-image: linear-gradient(to bottom right, rgb(255, 123, 0), rgb(136, 60, 60));
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1920px;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
@@ -116,6 +113,7 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    min-width: 500px;
 }
 .productItem {
     display: flex;
@@ -128,7 +126,7 @@ section {
     background-color: var(--shadow-color);
 }
 .productItem img {
-    height: 50%;
+    height: 100%;
     overflow: hidden;
     object-fit: contain;
 }
@@ -217,6 +215,7 @@ section {
     align-content: flex-start;
     background-color: var(--shadow-color);
     padding: 20px;
+    margin-top: 20px;
 }
 .containerSection_mainPicture, .containerSection_secondPicture {
     width: auto;
@@ -273,15 +272,13 @@ footer {
 /*mobile devices*/
 
 @media (max-width: 900.00px) {
-    * {
-       font-size: 0.9rem;
-    }
-
+    .randomText, header { font-size: 0.9rem; }
+    
     .navBar--desktop {display: none;}
     #btn--open {display: flex;}
     .btn--hamburgerMenu {z-index: 2; padding: 5px; font-size: 3rem;}
     .btn--hamburgerMenu, #popUp--navBar {top: 0; position: fixed;}
-    #popUp--navBar--open {
+    .popUp--navBar--open {
         background-color: var(--shadow-color);
         padding-top: 60px;
         width: 150px;
@@ -299,8 +296,7 @@ footer {
     }
     .link:first-child {font-weight: bold;}
 
-    .slideButtonTitle {font-size: 50%;}
-    .section {width: 100%;}
+    .slideButtonTitle {font-size: 75%;}
     .slide {height: 200px; width: 200px;}
     
     /* footer mobile */

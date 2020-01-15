@@ -25,13 +25,13 @@ function displaySlide(n) {
 
 function showMobileMenu() {
     document.getElementById("popUp--navBar").style.display="flex";
-    document.getElementById("popUp--navBar").classList.add="popUp--navBar--open";
+    //document.getElementById("popUp--navBar").classList.add="popUp--navBar--open";
     document.getElementById("btn--open").style.display="none";
     document.getElementById("btn--close").style.display="flex";
     }
 function closeMobileMenu() {
     document.getElementById("popUp--navBar").style.display="none";
-    document.getElementById("popUp--navBar--open").classList.remove="popUp--navBar--open";
+    //document.getElementsByClassName("popUp--navBar--open").classList.remove="popUp--navBar--open";
     document.getElementById("btn--close").style.display="none";
     document.getElementById("btn--open").style.display="flex";
 }

@@ -42,7 +42,7 @@
                     <img src="/bilder/termos.jpg" alt="popup">
                 </li>
                 <li class="popUp_item">
-                    <a class="btn btn--green btn_checkout" href="kundKorg.html">Checkout</a>
+                    <a class="btn btn--green btn_checkout" href="vagn.html">Checkout</a>
                 </li>
             </ul>
         </div>
@@ -51,19 +51,20 @@
     <nav class="navBar navBar--desktop">
         <ul class="nav_links">
             <li><a class="link" href="index.html">Startsida</a></li>
-            <li><a class="link" href="vagn.html">Tröjor</a></li>
-            <li><a class="link" href="#">T-Shirts</a></li>
-            <li><a class="link" href="#">Jeans</a></li>
+            <li><a class="link" href="kategori1.html">Skohorn</a></li>
+            <li><a class="link" href="kategori2.html">Dryck</a></li>
+            <li><a class="link" href="kategori3.html">För hemmet</a></li>
         </ul>
     </nav>
     
-    <button class="btn btn--hamburgerMenu"><i class="fa fa-bars fa-4x" aria-hidden="true"></i></button>
-    <nav class="popUp popUp--navBar">
+    <button class="btn btn--hamburgerMenu" id="btn--open" onclick="showMobileMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <button class="btn btn--hamburgerMenu" id="btn--close" onclick="closeMobileMenu()"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <nav class="popUp--navBar--open" id="popUp--navBar">
         <ul class="nav_links">
-            <a class="link" href="index.html"><li>Startsida</li></a>
-            <a class="link" href="vagn.html"><li>Tröjor</li></a>
-            <a class="link" href="#"><li>T-Shirts</li></a>
-            <a class="link" href="#"><li>Jeans</li></a>
+            <li><a class="link" href="index.html">Startsida</a></li>
+            <li><a class="link" href="kategori1.html">Skohorn</a></li>
+            <li><a class="link" href="kategori2.html">Dryck</a></li>
+            <li><a class="link" href="kategori3.html">För hemmet</a></li>
         </ul>
     </nav>
 

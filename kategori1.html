@@ -13,35 +13,36 @@
 
 <body>
     <header>
-             
         <div class="header-item1">
                 <img src="bilder/header-logga.png" alt="logo">
         </div>
         <div class="header-item2">
             <h2 class="header-rubrik">Webbshop</h2>
         </div>
-
         <div class="header-item3">
             <button class="btn btn--shoppingcart"><i class="fa fa-shopping-cart"></i>Kundvagn</button>
             <ul class="popUp popUp--shoppingcart">
+                <li class="popUp_item popUp_item--title">
+                    Din varukorg
+                </li>
                 <li class="popUp_item popUp_itemShadow">
-                    <p>0 kr</p>
+                    0 kr
                     <img src="/bilder/vattenflaska.jpg" alt="popup">
                 </li>
                 <li class="popUp_item">
-                    <p>99 kr</p>
+                    99 kr
                     <img src="/bilder/heligtvatten.jpg" alt="popup">
                 </li>
                 <li class="popUp_item popUp_itemShadow">
-                    <p>1 000 kr</p>
+                    1 000 kr
                     <img src="/bilder/Greenskohorn.jpg" alt="popup">
                 </li>
                 <li class="popUp_item">
-                    <p>500 kr</p>
+                    500 kr
                     <img src="/bilder/termos.jpg" alt="popup">
                 </li>
                 <li class="popUp_item">
-                    <a class="btn btn--green" href="kundKorg.html">Checkout</a>
+                    <a class="btn btn--green btn_checkout" href="vagn.html">Checkout</a>
                 </li>
             </ul>
         </div>
@@ -56,8 +57,9 @@
         </ul>
     </nav>
     
-    <button class="btn btn--hamburgerMenu"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    <nav class="popUp popUp--navBar">
+    <button class="btn btn--hamburgerMenu" id="btn--open" onclick="showMobileMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <button class="btn btn--hamburgerMenu" id="btn--close" onclick="closeMobileMenu()"><i class="fa fa-times" aria-hidden="true"></i></button>
+    <nav class="popUp--navBar--open" id="popUp--navBar">
         <ul class="nav_links">
             <li><a class="link" href="index.html">Startsida</a></li>
             <li><a class="link" href="kategori1.html">Skohorn</a></li>
@@ -65,8 +67,6 @@
             <li><a class="link" href="kategori3.html">För hemmet</a></li>
         </ul>
     </nav>
-        
-    
 
     <section>
       
